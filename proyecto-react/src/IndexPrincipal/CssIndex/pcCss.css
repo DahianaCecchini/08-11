@@ -1,0 +1,212 @@
+
+@media (min-width:769px) { 
+    
+    img{
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        margin-left: 40%;
+        border-radius: 100px;
+    }
+    img:hover{
+        transform:rotate(360deg);
+        transition: width 1s, height 1s, transform 1s;
+        width: 20rem;
+        height: 20rem;}
+     
+    
+    header{
+        background-image: url('food-pizza-wallpaper-preview.jpg');
+        background-position: center;
+        background-size: cover;
+        }
+    
+        nav.encabezado{
+        background-color: darkred;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;}
+    
+        div>h1{
+        grid-column: 1;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        justify-self: center;
+        padding: 3px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+     }
+     div{
+        grid-column: 1;
+        align-content: center;
+        justify-content: center;
+        padding: 10px;}
+     }
+     div>button{
+        border-radius: 5px;
+        margin: 3px;
+        padding: 5px;
+        align-items: center;
+        font-size: 25px;
+        color: white;
+        background-color: gray;
+        font-family: italic;}
+     
+     button.confirmarPedido{
+        display: block;
+        margin-top: 35px;
+        margin-left: 350px;
+        border-bottom: black;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: darkred;
+        width: 200px;}
+    
+    button.confirmarPedido:hover{
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
+    
+    button.confirmarPedido:active{
+        background-color: gray;}
+    
+    button.botonReporte{
+        display: block;
+        border-radius: 10px;
+        padding: 3px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        font-family: italic;
+        box-shadow: 0 0 30px 30px black
+        inset, 0 0 0 0 white; -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;}
+    
+    button.botonReporte:active{
+        background-color: gray;}
+    
+    button.botonReporte:hover{
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
+    
+    button.compras{
+        display: block;
+        border-radius: 10px;
+        padding: 3px;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        font-family:italic;
+        box-shadow: 0 0 30px 30px black
+        inset, 0 0 0 0 white; -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;}
+    
+    button.compras:active{
+        background-color: gray;}
+    
+    button.compras:hover{
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
+    
+    
+    #confirmarimprimir{
+        text-decoration: none;
+        color: white;}
+    
+    button.confirmarPedido{
+        display: block;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        font-family: italic;
+        inline-size: auto;
+        margin: 10px;}
+    
+    button.confirmarPedido:active{
+        background-color: gray;}
+    
+    div#segundaColumna{
+       grid-column: 2;}
+    
+    ul>li{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;}
+    
+    ul#carrito{
+        margin-top: 5px;}
+    
+    input{
+        width: 35px;}
+    
+    form{
+        display: grid;
+        justify-items: center;
+        margin-top: 30px;}
+    
+    input.nombre{ 
+        width: 400px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        display: flex;
+        justify-self: flex-start;}
+        
+    input.direccion{
+        width: 250px;
+        display: flex;
+        align-items: center;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        justify-self: flex-start;}
+        
+    input.numero{
+        width: 150px;
+        display: flex;
+        align-items: center;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        justify-self: flex-start;}
+        
+    input#celular.telefono{
+        width: 250px;
+        display: flex;
+        align-items: center;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        justify-self: flex-start;}
+        
+    input.adicional{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        justify-self: flex-start;}  
+    
+    h1.detalleP{
+        inline-size: auto;}
+    button{
+        cursor: pointer;}
+    
