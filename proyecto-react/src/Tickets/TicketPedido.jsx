@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import  '../Tickets/Css/TicketsCss.css'
+
+
 
 function Ticket() {
   return (
@@ -9,7 +10,7 @@ function Ticket() {
 
 <h1>DETALLE PEDIDO</h1>
 
-<div className="Formulario">
+<div className="DottedBox">
     <input className="nombre" type="text" placeholder="NOMBRE/IDENTIFICADOR"/>
     <input className="direccion" type="text" placeholder="DIRECCION"/>
     <input className="N" type="number" placeholder="N°"/> 

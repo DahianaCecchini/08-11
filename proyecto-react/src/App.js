@@ -8,6 +8,10 @@ import { Productos } from './IndexPrincipal/Productos/Productos';
 import LogoMaxi from './IndexPrincipal/Logo maxi pizzas.png';
 import {Route} from 'react-router-dom';
 import {Switch} from 'react-router-dom';
+import IndexCajaGastos from './CajaGastos/IndexCajaGastos';
+import ReporteDiarioEHistorial from './PaginaReporte/ReporteDiarioEHistorial';
+import TicketPedido from './Tickets/TicketPedido';
+
 
 
 
@@ -21,9 +25,9 @@ function App() {
 <Productos></Productos>
 </div>
 </Route>  
-<Route  exact path = "/IndexCaja">  </Route>
-<Route exact path = "/TicketPedido"> </Route>
-<Route exact path = '/PaginaReporte'> </Route>
+<Route  exact path = "/IndexCaja"> <IndexCajaGastos/> </Route>
+<Route exact path = "/TicketPedido"> <TicketPedido/> </Route>
+<Route exact path = '/PaginaReporte'> <ReporteDiarioEHistorial/></Route>
 
 </Switch>
   );

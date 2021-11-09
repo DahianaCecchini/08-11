@@ -4,5 +4,5 @@ import { Link } from "react-router-dom"
 
 export function Confirmar () {
 return(
-<Link className="confirmarPedido">CONFIRMAR/IMPRIMIR</Link>)
+<Link className="confirmarPedido" to={'/TicketPedido'}>CONFIRMAR/IMPRIMIR</Link>)
 }

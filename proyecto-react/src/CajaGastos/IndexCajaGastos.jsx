@@ -1,7 +1,8 @@
 
 import '../App.css';
-import '../CajaGastos/Css/CajaGastos.css';
-import '../CajaGastos/Css/Responsive.css';
+import '../IndexPrincipal/CssIndex/cssIndex.css';
+import '../IndexPrincipal/CssIndex/iPadCss.css';
+import '../IndexPrincipal/CssIndex/pcCss.css';
 import LogoMaxi from '../CajaGastos/Logo maxi pizzas.png';
 
 
