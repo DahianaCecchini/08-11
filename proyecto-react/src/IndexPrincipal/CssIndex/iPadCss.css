@@ -34,14 +34,13 @@
         margin-top: 5px;
         text-align: center;
         justify-self: center;
-        padding: 3px;
-        width: 200px;}
+        padding: 3px;}
     
     section{
         display: grid;
         grid-template-columns: 1fr 1fr;}
     
-    div{
+    div.productos{
         grid-column: 1;
         align-content: center;
         justify-content: center;
@@ -81,7 +80,7 @@
     button.botonReporte:active{
         background-color: gray;}
     
-    button.compras{
+    button.Cargar{
         display: block;
         border-radius: 10px;
         padding: 3px;
@@ -90,6 +89,16 @@
         color: white;
         background-color: black;
         font-family:italic;}
+
+    button.Guardar{
+            
+            border-radius: 10px;
+            padding: 3px;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            font-family:italic;}
     
     button.compras:active{
         background-color: gray;}
@@ -113,7 +122,10 @@
         background-color: gray;}
     
     div#segundaColumna{
-        grid-column: 2;}
+        columns: auto;
+    display: grid;
+    margin-block-end: auto;
+}
     
     ul>li{
         list-style: none;
@@ -186,4 +198,16 @@
     div#check{
         display: flex;
         justify-content: center;}
+    }
+    form#InicioCaja{
+        display: grid;
+    }
+    form#InicioCaja>input{
+        width: 100px;
+    }
+    form#Compras{
+        display: grid;
+    }
+    form#Compras>input{
+        width: 100px;
     }

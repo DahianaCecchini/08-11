@@ -45,7 +45,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
      }
-     div{
+     div.productos{
         grid-column: 1;
         align-content: center;
         justify-content: center;
@@ -123,8 +123,8 @@
         text-decoration: none;
         color: white;}
     
-    button.confirmarPedido{
-        display: block;
+    a.confirmarPedido{
+        display: inline-block;
         border-radius: 10px;
         padding: 10px;
         font-size: 20px;
@@ -137,9 +137,7 @@
     button.confirmarPedido:active{
         background-color: gray;}
     
-    div#segundaColumna{
-       grid-column: 2;}
-    
+  
     ul>li{
         list-style: none;
         display: flex;
@@ -185,7 +183,7 @@
         font-size: 18px;
         justify-self: flex-start;}
         
-    input#celular.telefono{
+    input.celular{
         width: 250px;
         display: flex;
         align-items: center;
@@ -209,4 +207,35 @@
         inline-size: auto;}
     button{
         cursor: pointer;}
-    
+    a{
+        text-decoration: none;
+        font-size: medium;
+        font-size: medium;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        padding: 5px;
+        align-self: center;
+    }
+form#InicioCaja{
+    display: grid;
+}
+form#InicioCaja>input{
+    width: 100px;
+}
+form#Compras{
+    display: grid;
+}
+form#Compras>input{
+    width: 100px;
+}
+button{
+    display: block;
+    border-radius: 10px;
+    padding: 3px;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-family:italic;}
+

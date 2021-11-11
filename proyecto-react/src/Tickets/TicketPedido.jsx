@@ -8,13 +8,12 @@ function Ticket() {
 <body>
 <form>
 
-<h1>DETALLE PEDIDO</h1>
+<h1 id="Det">DETALLE PEDIDO</h1>
 
 <div className="DottedBox">
     <input className="nombre" type="text" placeholder="NOMBRE/IDENTIFICADOR"/>
     <input className="direccion" type="text" placeholder="DIRECCION"/>
-    <input className="N" type="number" placeholder="N°"/> 
-     <input className="telefono" type="text" placeholder="TELEFONO"/>
+     <input className="celular" type="text" placeholder="TELEFONO"/>
      <input className="adicional" type="text" placeholder="INFO ADICIONAL"/>
 </div>
      <div className="detallePedido">

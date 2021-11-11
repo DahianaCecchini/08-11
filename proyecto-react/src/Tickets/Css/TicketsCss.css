@@ -1,10 +1,26 @@
 
-.DottedBox {
+.Datos {
     margin: 40px;
-    border: 5px dotted pink;
+    border: 5px;
   }
   
-  .DottedBox_content {
+  .Datos_content {
     font-size: 15px;
     text-align: center;
+  }
+  h3{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  h1.Det{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  div.detallePedido{
+    margin-top: 15px;
   }
