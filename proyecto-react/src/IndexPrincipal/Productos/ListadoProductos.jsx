@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 
 
 
+
 export const ListadoPizzas = (props) => {
     const [products, setProducts] = useState([])
 
@@ -20,8 +21,9 @@ return (
                 </>
             ):
             (products.map(product => 
-                <button>
-                    {product.nombre}</button>))}
+                <button onClick={props.AgregarACarrito}>
+                    {product.nombre}
+                    </button>))}
     </div>
 )}
 

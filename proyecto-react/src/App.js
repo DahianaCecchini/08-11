@@ -1,6 +1,4 @@
-
 import './App.css';
-
 import '../src/IndexPrincipal/CssIndex/iPadCss.css'
 import '../src/IndexPrincipal/CssIndex/pcCss.css'
 import { Nav } from './IndexPrincipal/Nav/NavBotones';
@@ -20,6 +18,7 @@ const [carrito,setCarrito] = useState([])
 
 function AgregarACarrito (producto) {
 setCarrito (carrito.concat(producto))
+console.log("HOLA SOY LA PRUEBA DE LA FUNCION")
 }
 
 
@@ -30,7 +29,9 @@ setCarrito (carrito.concat(producto))
 <div className="Container">
 <header><img src={LogoMaxi} title="Logo" alt="Logo"/></header>
 <Nav></Nav>
-<Productos></Productos>
+<button onClick={AgregarACarrito}>BOTON PRUEBA</button>
+<Productos carrito={carrito} 
+AgregarACarrito={AgregarACarrito}></Productos>
 </div>
 </Route>  
 <Route  exact path = "/IndexCaja"> <IndexCajaGastos/> </Route>
