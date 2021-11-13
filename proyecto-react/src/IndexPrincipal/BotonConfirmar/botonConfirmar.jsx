@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-
-export function Confirmar () {
-return(
-<Link className="confirmarPedido" to={'/TicketPedido'}>CONFIRMAR/IMPRIMIR</Link>)
+export function Confirmar (props) {
+  return(
+    <button className="confirmarPedido" onClick={props.confirm}>CONFIRMAR/IMPRIMIR</button>)
 }

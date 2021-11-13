@@ -1,5 +1,5 @@
 import React from "react";
-import { Confirmar } from "../BotonConfirmar/botonConfirmar"
+
 
 export function ChecksBox () {
     return(
@@ -8,7 +8,7 @@ export function ChecksBox () {
         <input type="checkbox"  id="miElementoCheckbox2"/> JUAN
             <div id="msg"></div>
             <div id="msg2"></div> 
-    <Confirmar></Confirmar>
+    
     </div>
     )
 }

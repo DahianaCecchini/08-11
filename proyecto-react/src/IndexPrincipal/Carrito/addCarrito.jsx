@@ -1,8 +1,6 @@
 import React from "react";
 
 
-
-
 export function Carrito (props) {
     return (
     <div>

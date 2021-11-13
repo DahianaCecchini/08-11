@@ -20,7 +20,8 @@ return (
                 </>
             ):
             (products.map(product => 
-                <button>{product.nombre}</button>))}
+                <button>
+                    {product.nombre}</button>))}
     </div>
 )}
 

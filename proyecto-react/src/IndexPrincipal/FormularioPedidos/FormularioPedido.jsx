@@ -2,10 +2,15 @@ import React from "react";
 import { ChecksBox } from "../CheckBox/ChecksBox";
 import  { useState } from "react";
 import * as utils from "../Js/validaciones";
+import { useHistory } from "react-router-dom";
+import { Confirmar } from "../BotonConfirmar/botonConfirmar";
+
+
+
 
 
 export function Formulario ()  {
-
+    let history = useHistory();
     const [Nombre, setNombre] = useState("")
     const [Direccion, setDireccion] = useState("")
     const [Telefono, setTelefono] = useState("")
@@ -13,13 +18,20 @@ export function Formulario ()  {
     const [DireccionIncorrecta, setDireccionIncorrecta] = useState ("")
     const [TelefonoIncorrecto, setTelefonoIncorrecto] = useState ("")
     const [allOk, setAllOk] = useState (false)
-    
-const Validacion = () => {
-    ((utils.validacionNombre(Nombre)  ||
-     utils.validacionDireccion(Direccion))||
-      utils.validacionCelular(Telefono)) ?
-      setAllOk(false) : setAllOk(true); 
-     cargaInfo();}
+
+    const Validacion = () => {
+        if((utils.validacionNombre(Nombre)  ||
+         utils.validacionDireccion(Direccion))||
+          utils.validacionCelular(Telefono)) {
+            setAllOk(false)
+            cargaInfo();
+          }else{
+            setAllOk(true)
+            history.push("/TicketPedido")
+          }
+         
+        }
+ 
         
      const cargaInfo = () => {
         setNombreIncorrecto(utils.validacionNombre(Nombre));
@@ -63,16 +75,16 @@ const Validacion = () => {
                 type="text" 
                 id="info" 
                 placeholder="INFO ADICIONAL"/>
+                
 
-
-            <button type="button" onClick={() => Validacion()}>Enviar</button>
-            {
-                allOk && (<p className="correct">Cargado correctamente</p> )}
-
-                       
+     {
+                allOk && (<p className="correct">Cargado correctamente</p> )}   
+                      
             </form>
+                <Confirmar confirm={Validacion}></Confirmar>
                 <ChecksBox></ChecksBox>
         </div> 
     )
+
 }
 export default Formulario;

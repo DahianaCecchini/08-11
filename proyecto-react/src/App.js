@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import '../src/IndexPrincipal/CssIndex/iPadCss.css'
 import '../src/IndexPrincipal/CssIndex/pcCss.css'
 import { Nav } from './IndexPrincipal/Nav/NavBotones';
@@ -12,8 +13,6 @@ import ReporteDiarioEHistorial from './PaginaReporte/ReporteDiarioEHistorial';
 import TicketPedido from './Tickets/TicketPedido';
 import Carrito from './IndexPrincipal/Carrito/addCarrito';
 import { useState } from 'react';
-
-
 
 
 function App() {
