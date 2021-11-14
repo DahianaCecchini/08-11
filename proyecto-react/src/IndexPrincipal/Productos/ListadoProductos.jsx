@@ -20,14 +20,14 @@ return (
                     Cargando...
                 </>
             ):
-            (products.map(product => 
-                <button onClick={props.AgregarACarrito}>
-                    {product.nombre}
+            (products.map((product, index) => 
+                <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>
+                {product.nombre}
                     </button>))}
     </div>
 )}
 
-export const ListadoMedianas = () => {
+export const ListadoMedianas = (props) => {
     const [products, setProducts] = useState([])
 useEffect(()=>{
         fetch('http://localhost:4000/pizzasMedianas').then(res =>
@@ -44,11 +44,12 @@ return (
             ):
             (
                 products.map(product => 
-                    <button>{product.nombre}</button>))}
+                    <button onClick={()=>props.AgregarACarrito(product.nombre)}>
+                    {product.nombre}</button>))}
     </div>
 )}
 
-export const ListadoPequeñas = () => {
+export const ListadoPequeñas = (props) => {
     const [products, setProducts] = useState([])
 useEffect(()=>{
         fetch('http://localhost:4000/pizzasChicas').then(res =>
@@ -65,11 +66,12 @@ return (
             ):
             (
                 products.map(product => 
-                    <button>{product.nombre}</button>))}
+                    <button onClick={()=>props.AgregarACarrito(product.nombre)}>
+                    {product.nombre}</button>))}
     </div>
 )}
 
-export const ListadoEmpanadas = () => {
+export const ListadoEmpanadas = (props) => {
     const [products, setProducts] = useState([])
 useEffect(()=>{
         fetch('http://localhost:4000/empanadas').then(res =>
@@ -86,11 +88,12 @@ return (
             ):
             (
                 products.map(product => 
-                    <button>{product.nombre}</button>))}
+                    <button onClick={()=>props.AgregarACarrito(product.nombre)}>
+                    {product.nombre}</button>))}
     </div>
 )}
 
-export const ListadoFritas = () => {
+export const ListadoFritas = (props) => {
     const [products, setProducts] = useState([])
 useEffect(()=>{
         fetch('http://localhost:4000/papasFritas').then(res =>
@@ -107,11 +110,12 @@ return (
             ):
             (
                 products.map(product => 
-                    <button>{product.nombre}</button>))}
+                    <button onClick={()=>props.AgregarACarrito(product.nombre)}>
+                    {product.nombre}</button>))}
     </div>
 )}
 
-export const ListadoSandwiches = () => {
+export const ListadoSandwiches = (props) => {
     const [products, setProducts] = useState([])
 useEffect(()=>{
         fetch('http://localhost:4000/sandwichesCalientes').then(res =>
@@ -128,11 +132,12 @@ return (
             ):
             (
                 products.map(product => 
-                    <button>{product.nombre}</button>))}
+                    <button onClick={()=>props.AgregarACarrito(product.nombre)}>
+                    {product.nombre}</button>))}
     </div>
 )}
 
-export const ListadoBebidas = () => {
+export const ListadoBebidas = (props) => {
     const [products, setProducts] = useState([])
 useEffect(()=>{
         fetch('http://localhost:4000/bebidas').then(res =>
@@ -149,11 +154,12 @@ return (
             ):
             (
                 products.map(product => 
-                    <button>{product.nombre}</button>))}
+                    <button onClick={()=>props.AgregarACarrito(product.nombre)}>
+                    {product.nombre}</button>))}
     </div>
 )}
 
-export const ListadoExtras = () => {
+export const ListadoExtras = (props) => {
     const [products, setProducts] = useState([])
 useEffect(()=>{
         fetch('http://localhost:4000/extras').then(res =>
@@ -170,6 +176,7 @@ return (
             ):
             (
                 products.map(product => 
-                    <button>{product.nombre}</button>))}
+                    <button onClick={()=>props.AgregarACarrito(product.nombre)}>
+                    {product.nombre}</button>))}
     </div>
 )}

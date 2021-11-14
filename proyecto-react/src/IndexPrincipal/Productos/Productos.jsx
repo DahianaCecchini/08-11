@@ -4,7 +4,7 @@ import { Formulario } from '../FormularioPedidos/FormularioPedido';
 import { ListadoPequeñas, ListadoPizzas, ListadoSandwiches,
         ListadoEmpanadas, ListadoMedianas,ListadoFritas, ListadoBebidas, ListadoExtras} from '../Productos/ListadoProductos'
 
-export const Productos = () => {
+export const Productos = (props) => {
         
 return(
 <section>
@@ -12,48 +12,48 @@ return(
   
 <h1>PIZZAS GRANDES</h1>
 <div id="pizzas">
-<ListadoPizzas></ListadoPizzas>
+<ListadoPizzas AgregarACarrito={props.AgregarACarrito}></ListadoPizzas>
 </div>
 
 <h1>PIZZAS MEDIANAS</h1>
 <div id="pizzasM">
-<ListadoMedianas></ListadoMedianas>
+<ListadoMedianas AgregarACarrito={props.AgregarACarrito}></ListadoMedianas>
 </div>
 
 <h1>PIZZAS CHICAS</h1>
 <div id="pizzasCh">
-<ListadoPequeñas></ListadoPequeñas>
+<ListadoPequeñas AgregarACarrito={props.AgregarACarrito}></ListadoPequeñas>
 </div>
 
 <h1>EMPANADAS</h1>
 <div id="empanadas">
-<ListadoEmpanadas></ListadoEmpanadas>
+<ListadoEmpanadas AgregarACarrito={props.AgregarACarrito}></ListadoEmpanadas>
 </div>
 
 <h1>PAPAS FRITAS</h1>
 <div id="fritas">
-<ListadoFritas></ListadoFritas>
+<ListadoFritas AgregarACarrito={props.AgregarACarrito}></ListadoFritas>
 </div>
 
 <h1>SANDWICHES CALIENTES</h1>
 <div id="sandwiches">
-<ListadoSandwiches></ListadoSandwiches>
+<ListadoSandwiches AgregarACarrito={props.AgregarACarrito}></ListadoSandwiches>
 </div>
 
 <h1>BEBIDAS</h1>
 <div id="bebidas">
-<ListadoBebidas></ListadoBebidas>
+<ListadoBebidas AgregarACarrito={props.AgregarACarrito}></ListadoBebidas>
 </div>
 
 <h1>EXTRAS</h1>
 <div id="extras">
-<ListadoExtras></ListadoExtras>
+<ListadoExtras AgregarACarrito={props.AgregarACarrito}></ListadoExtras>
 </div>
 
 </div>
 <div id="segundaColumna">
 
-<Carrito></Carrito> 
+<Carrito carrito={props.carrito}></Carrito> 
 <Formulario></Formulario>    
 </div>
 

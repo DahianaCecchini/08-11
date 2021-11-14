@@ -10,15 +10,15 @@ import IndexCajaGastos from './CajaGastos/IndexCajaGastos';
 import ReporteDiarioEHistorial from './PaginaReporte/ReporteDiarioEHistorial';
 import TicketPedido from './Tickets/TicketPedido';
 import Carrito from './IndexPrincipal/Carrito/addCarrito';
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 
 function App() {
 const [carrito,setCarrito] = useState([])
 
+
 function AgregarACarrito (producto) {
 setCarrito (carrito.concat(producto))
-console.log("HOLA SOY LA PRUEBA DE LA FUNCION")
+
 }
 
 
@@ -29,8 +29,8 @@ console.log("HOLA SOY LA PRUEBA DE LA FUNCION")
 <div className="Container">
 <header><img src={LogoMaxi} title="Logo" alt="Logo"/></header>
 <Nav></Nav>
-<button onClick={AgregarACarrito}>BOTON PRUEBA</button>
 <Productos carrito={carrito} 
+
 AgregarACarrito={AgregarACarrito}></Productos>
 </div>
 </Route>  
