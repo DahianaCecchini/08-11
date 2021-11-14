@@ -9,29 +9,24 @@ import {Switch} from 'react-router-dom';
 import IndexCajaGastos from './CajaGastos/IndexCajaGastos';
 import ReporteDiarioEHistorial from './PaginaReporte/ReporteDiarioEHistorial';
 import TicketPedido from './Tickets/TicketPedido';
-import Carrito from './IndexPrincipal/Carrito/addCarrito';
 import { useState, useEffect } from 'react';
+
 
 function App() {
 const [carrito,setCarrito] = useState([])
 
-
 function AgregarACarrito (producto) {
-setCarrito (carrito.concat(producto))
-
-}
+setCarrito (carrito.concat(producto))}
 
 
-  return (
+return (
 
 <Switch>
 <Route  path exact= '/'>
 <div className="Container">
 <header><img src={LogoMaxi} title="Logo" alt="Logo"/></header>
 <Nav></Nav>
-<Productos carrito={carrito} 
-
-AgregarACarrito={AgregarACarrito}></Productos>
+<Productos carrito={carrito} AgregarACarrito={AgregarACarrito}></Productos>
 </div>
 </Route>  
 <Route  exact path = "/IndexCaja"> <IndexCajaGastos/> </Route>

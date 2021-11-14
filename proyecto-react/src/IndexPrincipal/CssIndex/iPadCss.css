@@ -211,3 +211,9 @@
     form#Compras>input{
         width: 100px;
     }
+    span{
+        margin: 20px;
+        margin-top: 5px;
+        display: grid;
+        justify-content: center;
+    }
