@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { Carrito } from '../Carrito/addCarrito';
+import { Carrito } from '../Carrito/AgregarCarrito';
 import { Formulario } from '../FormularioPedidos/FormularioPedido';
 import { ListadoPequeñas, ListadoPizzas, ListadoSandwiches,
         ListadoEmpanadas, ListadoMedianas,ListadoFritas, ListadoBebidas, ListadoExtras} from '../Productos/ListadoProductos'
