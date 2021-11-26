@@ -1,6 +1,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import PropagateLoader from "react-spinners/PropagateLoader";
+import { ListadoProductos } from "./Render";
 
 
 export const ListadoPizzas = (props) => {
@@ -8,20 +9,13 @@ export const ListadoPizzas = (props) => {
     const [loading, setLoading] = useState(true);
 
 useEffect(()=>{
-        fetch('http://localhost:4000/pizzasGrandes')
+    fetch('http://localhost:4000/pizzasGrandes')
         .then(res => res.json())
         .then (res => {
         setLoading(false);
           setProducts(res)},[])  })            
 return (
-    <div id="pizzas">{
-            products.length == 0 ? 
-            (
-            <span><PropagateLoader loading={loading}></PropagateLoader></span>
-            ):
-            (products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos></ListadoProductos>
 )}
 
 export const ListadoMedianas = (props) => {
