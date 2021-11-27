@@ -1,7 +1,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
-import PropagateLoader from "react-spinners/PropagateLoader";
 import { ListadoProductos } from "./Render";
+
 
 
 export const ListadoPizzas = (props) => {
@@ -13,9 +13,9 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  })            
+        setProducts(res)})},[])            
 return (
-    <ListadoProductos></ListadoProductos>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
 
 export const ListadoMedianas = (props) => {
@@ -27,16 +27,9 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  })   
+        setProducts(res)})},[])   
 return (
-    <div id="pizzasM">{
-            products.length == 0 ? 
-            (
-            <span><PropagateLoader loading={loading}></PropagateLoader></span> 
-            ):
-            (products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
 
 export const ListadoPequeñas = (props) => {
@@ -48,17 +41,9 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  })   
+        setProducts(res)})},[])   
 return (
-    <div id="pizzasCh">{
-            products.length == 0 ? 
-            (
-            <span><PropagateLoader loading={loading}></PropagateLoader></span> 
-            ):
-            (
-            products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
 
 export const ListadoEmpanadas = (props) => {
@@ -70,17 +55,9 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  })  
+        setProducts(res)})},[])  
 return (
-    <div id="empanadas">{
-            products.length == 0 ? 
-            (
-            <span><PropagateLoader loading={loading}></PropagateLoader></span> 
-            ):
-            (
-            products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
 
 export const ListadoFritas = (props) => {
@@ -92,17 +69,9 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  })  
+        setProducts(res)})},[])  
 return (
-    <div id="fritas">{
-            products.length == 0 ? 
-            (
-            <span><PropagateLoader loading={loading}></PropagateLoader></span> 
-            ):
-            (
-            products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
 
 export const ListadoSandwiches = (props) => {
@@ -114,17 +83,9 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  }) 
+        setProducts(res)})},[]) 
 return (
-    <div id="sandwiches">{
-            products.length == 0 ? 
-            (   
-            <span><PropagateLoader loading={loading}></PropagateLoader></span> 
-            ):
-            (
-            products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
 
 export const ListadoBebidas = (props) => {
@@ -136,17 +97,9 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  }) 
+        setProducts(res)})},[]) 
 return (
-    <div id="bebidas">{
-            products.length == 0 ? 
-            (
-            <span><PropagateLoader loading={loading}></PropagateLoader></span>
-            ):
-            (
-            products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
 
 export const ListadoExtras = (props) => {
@@ -158,15 +111,7 @@ useEffect(()=>{
         .then(res => res.json())
         .then (res => {
         setLoading(false);
-          setProducts(res)},[])  }) 
+        setProducts(res)})},[]) 
 return (
-    <div id="extras">{
-            products.length == 0 ? 
-            (
-            <span><PropagateLoader loading={loading}></PropagateLoader></span>
-            ):
-            (
-            products.map((product, index) => 
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
-    </div>
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
 )}
