@@ -1,0 +1,25 @@
+{
+  "name": "REACT",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u00000\u00008\u0000-\u00001\u00001\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react-router-dom": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DahianaCecchini/08-11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DahianaCecchini/08-11/issues"
+  },
+  "homepage": "https://github.com/DahianaCecchini/08-11#readme"
+}
