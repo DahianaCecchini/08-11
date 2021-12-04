@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router()
 
+const Controladores = require('../Controladores/CargaProductos')
 
-router.get('/', (req,res)=>{
-    res.send([{id:1, name:'blabla'}])
-})
+router.get('/', )
 
 module.export = router;
