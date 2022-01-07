@@ -12,6 +12,7 @@ export const ListadoProductos = (props) => {
             (
             props.products.map((product, index) => 
             
-            <button key={index} onClick={()=>props.AgregarACarrito(product.nombre)}>{product.nombre}</button>))}
+            <button key={index} onClick={()=>props.AgregarACarrito(product)}>
+                {product.nombre}</button>))}
         </div>
     )}

@@ -16,6 +16,7 @@ function App() {
 const [carrito,setCarrito] = useState([])
 
 function AgregarACarrito (producto) {
+  console.log(producto)
 setCarrito (carrito.concat(producto))}
 
 

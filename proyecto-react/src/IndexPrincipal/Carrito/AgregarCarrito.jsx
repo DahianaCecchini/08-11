@@ -26,7 +26,7 @@ useEffect(()=>{
             ):
                 (props.carrito.map((producto, index)=>
                     <li key={index}>
-                            <p> {producto} </p>
+                            <p> {producto.categoria} {producto.nombre} </p>
                             CANT.<input name="cantidad" value={cantidad} onChange={(e)=> setCantidad(e.target.value)}/>
                             PRECIO <input name="precio" value={precio} onChange={(e)=> setPrecio(e.target.value)} />
                     </li>

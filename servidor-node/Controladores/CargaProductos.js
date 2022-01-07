@@ -1,7 +1,4 @@
 const express = require('express');
-const router = express.Router()
-
-
 const {listaPGrandes,
     listaPMedianas,
     listaPChicas,
@@ -10,6 +7,7 @@ const {listaPGrandes,
     listaBebidas,
     listaSandwiches,
     listaExtras} = require('../Controladores/ArregloProductos')
+
 
 function getGrandes(req, res){
     res.send(listaPGrandes);
@@ -35,7 +33,7 @@ function getSandwiches(req, res){
 function getExtras(req, res){
     res.send(listaExtras);
 }
-module.exports = {
+module.exports={
     getGrandes,
     getMedianas,
     getChicas,
