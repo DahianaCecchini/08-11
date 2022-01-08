@@ -1,6 +1,5 @@
 
 let listaPGrandes = [
-    
     {
       "nombre": "MUZZA",
       "categoria": "Pizzas Grandes",

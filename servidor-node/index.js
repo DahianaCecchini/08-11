@@ -18,9 +18,11 @@ app.use(bodyParser.json()); //Cuando reciba algun tipo de dato en un peticion la
 
 
 //cors, configurar cabeceras http
-app.use(cors);
+app.use(cors());
 
-//app.use('/pizzasGrandes', productosRoutes);
+app.use('/', productosRoutes);
+
+
 
 app.listen(4000,()=> {
     console.log("Estoy funcionando")

@@ -3,14 +3,14 @@ const router = express.Router()
 
 const Controladores = require('../Controladores/CargaProductos')
 
-router.get('/', Controladores.getGrandes)
-router.get('/', Controladores.getMedianas)
-router.get('/', Controladores.getChicas)
-router.get('/', Controladores.getPapas)
-router.get('/', Controladores.getEmpanadas)
-router.get('/', Controladores.getBebidas)
-router.get('/', Controladores.getSandwiches)
-router.get('/', Controladores.getExtras)
+router.get('/pizzasGrandes', Controladores.getGrandes)
+router.get('/pizzasMedianas', Controladores.getMedianas)
+router.get('/pizzasChicas', Controladores.getChicas)
+router.get('/papasFritas', Controladores.getPapas)
+router.get('/empanadas', Controladores.getEmpanadas)
+router.get('/bebidas', Controladores.getBebidas)
+router.get('/sandwichesCalientes', Controladores.getSandwiches)
+router.get('/extras', Controladores.getExtras)
 
 
-module.export = router;
+module.exports = router;
