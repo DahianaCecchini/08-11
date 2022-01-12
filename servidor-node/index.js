@@ -12,17 +12,22 @@ function cors() {
         next();
     }} 
 
-//middlewares  -- metodo que se ejecuta antes de que llegue a un controlador 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json()); //Cuando reciba algun tipo de dato en un peticion la convierto en json, en cada petion
+app.use(bodyParser.json()); 
 
-
-//cors, configurar cabeceras http
 app.use(cors());
 
 app.use('/', productosRoutes);
 
-
+app.get('/prueba', (req,res)=>{
+    try {
+        console.log('Esta todo OK');
+        res.sendStatus(200)
+      } catch (error) {
+        console.error('Ocurrió un error', error);
+        res.sendStatus(510)
+      }
+})
 
 app.listen(4000,()=> {
     console.log("Estoy funcionando")
