@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router()
 const Controlador2 = require ('../Controladores/ArregloProductos')
-const Controladores = require('../Controladores/CargaProductos')
+
 
 router.get('/pizzasGrandes', Controlador2.getGrandes)
 router.get('/pizzasMedianas', Controlador2.getMedianas)

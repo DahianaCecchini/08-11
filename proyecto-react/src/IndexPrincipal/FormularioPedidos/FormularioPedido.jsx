@@ -34,32 +34,33 @@ const cargaInfo = () => {
     setTelefonoIncorrecto(utils.validacionCelular(Telefono));}
      
 return(
-        <div className="formulario">
-            <form>
-                <input className="nombre" 
+    <div className="formulario" method="POST">
+        <form>
+            <input className="nombre" 
                 type="text" id="name" placeholder="NOMBRE/IDENTIFICADOR"
                 onChange={e => setNombre (e.target.value)} value={Nombre}/>
                 {NombreIncorrecto && (<p className="error">Verifique su nombre</p>)}
                 
-                <input className="direccion" 
+            <input className="direccion" 
                 type="text" id="domicilio" placeholder="DIRECCION"
                 onChange={e => setDireccion (e.target.value)} value={Direccion}/>
                 {DireccionIncorrecta && (<p className="error">Verifique direccion</p>)}
               
-                <input className="celular" 
+            <input className="celular" 
                 id="celular" type="text" placeholder="CELULAR" 
                 onChange={e => setTelefono (e.target.value)} value={Telefono}/>
                 {TelefonoIncorrecto && (<p className="error">Verifique su celular</p>)}
                 
-                <input className="adicional" type="text" id="info" placeholder="INFO ADICIONAL"/>
-                <ChecksBox></ChecksBox>
+            <input className="adicional" type="text" id="info" placeholder="INFO ADICIONAL"/>
+<ChecksBox></ChecksBox>
     
         {allOk && (<p className="correct">Cargado correctamente</p> )}   
 
             </form>
-                        <Confirmar confirm={Validacion}></Confirmar>                      
-        </div> 
-    )
+
+<Confirmar confirm={Validacion}></Confirmar>  
+
+        </div>)
 
 }
 export default Formulario;
