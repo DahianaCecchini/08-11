@@ -10,6 +10,8 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
+require('dotenv').config();
+
 app.use('/', productosRoutes);
 app.use('/formulario', clientesRoutes);
 

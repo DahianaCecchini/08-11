@@ -1,10 +1,10 @@
 const { Client } = require ('pg')
 
 const config = {
-  host: 'localhost',
-  database: 'Menu',
-  user: 'postgres',
-  password:'Testing'
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD
 }
 
 async function getGrandes(req, res){

@@ -1,21 +1,20 @@
 const { Client } = require ('pg');
 
 const config = {
-    host: 'localhost',
-    database: 'formulario',
-    user: 'postgres',
-    password:'Testing'
+    host: process.env.PGHOST,
+    database: process.env.PGDATABASE,
+    user: process.env.PGUSER,
+    password: process.env.PGPASSWORD
   }
 async function DatosClientes(req, res){
     try{
         const client = new Client(config)
         await client.connect();
         let datos = req.body
-        const result = await client.query
-        ("insert into public.formulario(nombre, direccion, celular, adicional) values ($1,$2,$3,$4) returning *",
+        const result = await client.query("insert into public.formulariobase (Nombre, Direccion, Celular, Adicional) values ($1,$2,$3,$4) returning *",
         [datos.Nombre, datos.Direccion, datos.Celular, datos.Adicional]);
         console.log(result.rows);
-        await client.end();
+        await client.end()
         res.status(200).send({message:'Enviado con exito', datos: datos});
         }
         catch (error){
