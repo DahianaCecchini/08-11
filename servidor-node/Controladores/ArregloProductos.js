@@ -14,6 +14,7 @@ async function getGrandes(req, res){
     const result = await client.query("select * from public.productos where categoria='1'")
     await client.end();
     res.status(200).send(result.rows);
+    console.log(result.rows);
   }
     catch (error){
       console.error('No se ha podido conectar al servidor', error);
