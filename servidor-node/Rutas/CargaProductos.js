@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router()
-const Controlador2 = require ('../Controladores/ArregloProductos')
+const controlador = require ('../Controladores/ArregloProductos')
 
 
-router.get('/pizzasGrandes', Controlador2.getGrandes)
-router.get('/pizzasMedianas', Controlador2.getMedianas)
-router.get('/pizzasChicas', Controlador2.getChicas)
-router.get('/empanadas', Controlador2.getEmpanadas)
-router.get('/papasFritas', Controlador2.getPapas)
-router.get('/bebidas', Controlador2.getBebidas)
-router.get('/sandwichesCalientes', Controlador2.getSandwiches)
-router.get('/extras', Controlador2.getExtras)
+router.get('/pizzasGrandes', controlador.getGrandes)
+router.get('/pizzasMedianas', controlador.getMedianas)
+router.get('/pizzasChicas', controlador.getChicas)
+router.get('/empanadas', controlador.getEmpanadas)
+router.get('/papasFritas', controlador.getPapas)
+router.get('/bebidas', controlador.getBebidas)
+router.get('/sandwichesCalientes', controlador.getSandwiches)
+router.get('/extras', controlador.getExtras)
 
 
 module.exports = router;

@@ -22,7 +22,8 @@ app.get('/prueba', (req,res)=>{
     try {
         console.log('Esta todo OK');
         res.sendStatus(200)
-      } catch (error) {
+        } 
+      catch (error) {
         console.error('Ocurrió un error', error);
         res.sendStatus(510)
       }
