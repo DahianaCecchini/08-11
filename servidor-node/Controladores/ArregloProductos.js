@@ -8,68 +8,108 @@ const config = {
 }
 
 async function getGrandes(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='1'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='1'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+      console.error('No se ha podido conectar al servidor', error);
+      res.sendStatus(510)
+    }}
 
 async function getMedianas(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='2'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='2'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+    console.error('No se ha podido conectar al servidor', error);
+    res.sendStatus(510)
+    }}
 
 async function getChicas(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='3'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='3'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+    console.error('No se ha podido conectar al servidor', error);
+    res.sendStatus(510)
+    }}
 
 async function getEmpanadas(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='4'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='4'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+    console.error('No se ha podido conectar al servidor', error);
+    res.sendStatus(510)
+    }}
 
 async function getPapas(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='5'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='5'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+    console.error('No se ha podido conectar al servidor', error);
+    res.sendStatus(510)
+    }}
 
 async function getSandwiches(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='6'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='6'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+    console.error('No se ha podido conectar al servidor', error);
+    res.sendStatus(510)
+    }}
 
 async function getBebidas(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='7'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='7'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+    console.error('No se ha podido conectar al servidor', error);
+    res.sendStatus(510)
+    }}
 
 async function getExtras(req, res){
-  const client = new Client(config)
-  await client.connect();
-  const result = await client.query("select * from public.productos where categoria='8'")
-  console.log(result.rows);
-  await client.end();
-  res.send(result.rows);}
+  try{
+    const client = new Client(config)
+    await client.connect();
+    const result = await client.query("select * from public.productos where categoria='8'")
+    await client.end();
+    res.status(200).send(result.rows);
+  }
+    catch (error){
+    console.error('No se ha podido conectar al servidor', error);
+    res.sendStatus(510)
+    }}
 
 
 module.exports = {

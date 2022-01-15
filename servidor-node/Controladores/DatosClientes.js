@@ -1,25 +1,26 @@
-const { request } = require('express');
 const { Client } = require ('pg');
 
 const config = {
-  host: 'localhost',
-  database: 'formulario',
-  user: 'postgres',
-  password:'Testing'};
+    host: 'localhost',
+    database: 'formulario',
+    user: 'postgres',
+    password:'Testing'
+  }
+async function DatosClientes(req, res){
+    try{
+        const client = new Client(config)
+        await client.connect();
+        let datos = req.body
+        const result = await client.query
+        ("insert into public.formulario(nombre, direccion, celular, adicional) values ($1,$2,$3,$4) returning *",
+        [datos.Nombre, datos.Direccion, datos.Celular, datos.Adicional]);
+        console.log(result.rows);
+        await client.end();
+        res.status(200).send({message:'Enviado con exito', datos: datos});
+        }
+        catch (error){
+            console.error('No se ha podido conectar al servidor', error);
+            res.sendStatus(510)}
+        }  
+module.exports = {DatosClientes}
 
-async function DatosClientes(req, res) {
-    const AgregarInfo = {
-        nombre: request.body.nombre,
-        direccion: request.body.direccion,
-        celular: request.body.celular,
-        adicional: request.body.adicional}
-        
-const client = new Client(config)
-  await client.connect();
-  let informacion = req.body;
-  const result = await client.query("insert into public.formulario-contacto(nombre, direccion, celular, adicional) values ($1,$2,$3,$4) returning *",
-  [informacion.nombre, informacion.direccion, informacion.celular, informacion.adicional]);
-  await client.end();
-  res.send({Datos: AgregarInfo})};
-
-  module.exports = {DatosClientes}

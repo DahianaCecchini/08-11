@@ -34,8 +34,8 @@ const cargaInfo = () => {
     setTelefonoIncorrecto(utils.validacionCelular(Telefono));}
      
 return(
-    <div className="formulario" method="POST">
-        <form>
+    <div className="formulario">
+        <form method="POST" action="http://localhost:4000/formulario" encType="application/json">
             <input className="nombre" 
                 type="text" id="name" placeholder="NOMBRE/IDENTIFICADOR"
                 onChange={e => setNombre (e.target.value)} value={Nombre}/>
