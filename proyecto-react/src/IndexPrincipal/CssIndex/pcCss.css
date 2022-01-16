@@ -68,6 +68,20 @@ button.confirmarPedido{
     color: white;
     width: 300px;}
 
+button#Buscar{
+    color: white;
+    background-color: black;
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 50px;}
+
+div#Fecha{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;}
+
 button.confirmarPedido:hover{
     cursor: pointer;
     box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
@@ -110,7 +124,7 @@ ul#carrito{
     margin-top: 5px;}
 
 input{
-    width: 35px;
+    width: 75px;
     border-radius: 5px;}
 
 form{
