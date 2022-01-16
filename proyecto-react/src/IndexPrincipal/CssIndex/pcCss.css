@@ -1,197 +1,199 @@
 
 @media (min-width:769px) { 
     
-    img{
-        height: 10rem;
-        width: 10rem;
-        display: flex;
-        margin-left: 40%;
-        border-radius: 100px;}
+img{
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    margin-left: 40%;
+    border-radius: 100px;}
 
-    img:hover{
-        transform:rotate(360deg);
-        transition: width 1s, height 1s, transform 1s;
-        width: 20rem;
-        height: 20rem;}
-     
-    header{
-        background-image: url('food-pizza-wallpaper-preview.jpg');
-        background-position: center;
-        background-size: cover;}
+img:hover{
+    transform:rotate(360deg);
+    transition: width 1s, height 1s, transform 1s;
+    width: 20rem;
+    height: 20rem;}
     
-    nav.encabezado{
-        background-color: darkred;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;}
-    
-    div>h1{
-        grid-column: 1;
-        background-color: darkred;
-        color: white;
-        border-radius: 10px;
-        text-align: center;
-        justify-self: center;
-        padding: 3px;
-        width: 400px;
-        display: flex;
-        justify-content: center;}
-    
-    section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;}
+header{
+    background-image: url('food-pizza-wallpaper-preview.jpg');
+    background-position: center;
+    background-size: cover;}
 
-    div.productos{
-        grid-column: 1;
-        align-content: center;
-        justify-content: center;
-        padding: 10px;}}
+nav.encabezado{
+    background-color: darkred;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;}
 
-    div>button{
-        border-radius: 5px;
-        margin: 3px;
-        padding: 5px;
-        align-items: center;
-        font-size: 25px;
-        color: white;
-        background-color: gray;
-        font-family: italic;}
-     
-    button.confirmarPedido{
-        display: block;
-        margin-top: 35px;
-        border-bottom: gray;
-        background-color: black;
-        border-radius: 10px;
-        font-size: 20px;
-        color: white;
-        width: 300px;}
-    
-    button.confirmarPedido:hover{
-        cursor: pointer;
-        box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
-    
-    button.confirmarPedido:active{
-        background-color: darkred;}
-    
-    #confirmarimprimir{
-        text-decoration: none;
-        color: white;}
-    
-    a.confirmarPedido{
-        display: inline-block;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 20px;
-        color: white;
-        background-color: black;
-        font-family: italic;
-        inline-size: auto;
-        margin: 10px;}
-    
-    a:hover{
-        cursor: pointer;
-        box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
-    
-    ul>li{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-image: url('a.jpg');
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-        color: white;
-        border: outset;}
-    
-    ul#carrito{
-        margin-top: 5px;}
-    
-    input{
-        width: 35px;
-        border-radius: 5px;}
-    
-    form{
-        display: grid;
-        justify-items: center;
-        margin-top: 30px;}
-    
-    input.nombre{ 
-        width: 400px;
-        background-color: lightgray;
-        color: white;
-        border-radius: 10px;
-        font-size: 18px;
-        display: flex;
-        justify-self: flex-start;}
-        
-    input.direccion{
-        width: 250px;
-        display: flex;
-        align-items: center;
-        background-color: lightgray;
-        color: white;
-        border-radius: 10px;
-        font-size: 18px;
-        justify-self: flex-start;}
-        
-    input.celular{
-        width: 250px;
-        display: flex;
-        align-items: center;
-        background-color: lightgray;
-        color: white;
-        border-radius: 10px;
-        font-size: 18px;
-        justify-self: flex-start;}
-        
-    input.adicional{
-        width: 400px;
-        display: flex;
-        align-items: center;
-        background-color: lightgray;
-        color: white;
-        border-radius: 10px;
-        font-size: 18px;
-        justify-self: flex-start;}  
-    
-    h1.detalleP{
-        inline-size: auto;}
+div>h1{
+    grid-column: 1;
+    background-color: darkred;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    justify-self: center;
+    padding: 3px;
+    width: 400px;
+    display: flex;
+    justify-content: center;}
 
-    button{
-        cursor: pointer;
-        text-decoration: none;
-        font-size: medium;
-        font-size: medium;
-        color: white;
-        background-color: black;
-        border-radius: 5px;
-        padding: 5px;
-        align-self: center;}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;}
 
-    a{
-        text-decoration: none;
-        font-size: medium;
-        font-size: medium;
-        color: white;
-        background-color: black;
-        border-radius: 5px;
-        padding: 5px;
-        align-self: center;}
+div.productos{
+    grid-column: 1;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;}}
 
-    form#InicioCaja{
-        display: grid;}
+div>button{
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    background-color: gray;
+    font-family: italic;}
+    
+button.confirmarPedido{
+    display: block;
+    margin-top: 35px;
+    border-bottom: gray;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    width: 300px;}
 
-    form#InicioCaja>input{
-        width: 100px;}
+button.confirmarPedido:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
 
-    form#Compras{
-        display: grid;}
+button.confirmarPedido:active{
+    background-color: darkred;}
 
-    form#Compras>input{
-        width: 100px;}
+#confirmarimprimir{
+    text-decoration: none;
+    color: white;}
+
+a.confirmarPedido{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-family: italic;
+    inline-size: auto;
+    margin: 10px;}
+
+a:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;}
+
+ul>li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('a.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: white;
+    border: outset;}
+
+ul#carrito{
+    margin-top: 5px;}
+
+input{
+    width: 35px;
+    border-radius: 5px;}
+
+form{
+    display: grid;
+    justify-items: center;
+    margin-top: 30px;}
+
+input.nombre{ 
+    width: 400px;
+    background-color: lightgray;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-self: flex-start;}
+    
+input.direccion{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    justify-self: flex-start;}
+    
+input.celular{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    justify-self: flex-start;}
+    
+input.adicional{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    justify-self: flex-start;}  
+
+h1.detalleP{
+    inline-size: auto;}
+
+button{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: medium;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    align-self: center;}
+
+a{
+    text-decoration: none;
+    font-size: medium;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    align-self: center;}
+
+form#InicioCaja{
+    display: grid;}
+
+form#InicioCaja>input{
+    width: 100px;}
+
+form#Compras{
+    display: grid;}
+
+form#Compras>input{
+    width: 100px;}
+
+    
 
     
 

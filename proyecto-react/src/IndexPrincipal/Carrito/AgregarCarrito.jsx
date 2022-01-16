@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 
-
 export const Carrito = (props) => {
 const [cantidad, setCantidad] =useState(1)
 const [precio, setPrecio] =useState([])
@@ -14,7 +13,7 @@ useEffect(()=>{
     setTotal(aux)},[props.carrito])
 
 
-    return (
+return (
     <div>
     <h1 className="detalleP">DETALLE PEDIDO</h1>
         <ul id="carrito">{
@@ -30,7 +29,6 @@ useEffect(()=>{
                             CANT.<input name="cantidad" value={cantidad} onChange={(e)=> setCantidad(e.target.value)}/>
                             PRECIO <input name="precio" value={precio} onChange={(e)=> setPrecio(e.target.value)} />
                     </li>
-                
                 )
             )}
                 <p>TOTAL $ {total}</p>

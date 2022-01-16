@@ -4,8 +4,6 @@ import '../IndexPrincipal/CssIndex/iPadCss.css';
 import '../IndexPrincipal/CssIndex/pcCss.css';
 import LogoMaxi from '../CajaGastos/Logo maxi pizzas.png';
 
-
-
 function IndexCajaGastos() {
   return (
    

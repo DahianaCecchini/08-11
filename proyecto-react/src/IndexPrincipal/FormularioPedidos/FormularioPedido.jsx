@@ -5,7 +5,8 @@ import * as utils from "../Js/validaciones";
 import { useHistory } from "react-router-dom";
 import { Confirmar } from "../BotonConfirmar/botonConfirmar";
 
-export function Formulario ()  {
+
+export function Formulario (props)  {
     let history = useHistory();
 
     const [Nombre, setNombre] = useState("")
@@ -56,9 +57,9 @@ return(
 {allOk && (<p className="correct">Cargado correctamente</p> )}   
 
 <button>CARGAR DATOS</button>
-
+<Confirmar confirm={Validacion} ></Confirmar>
     </form>
-<Confirmar confirm={Validacion}></Confirmar>
+
     </div>)
 
 }

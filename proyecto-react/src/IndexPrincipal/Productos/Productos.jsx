@@ -7,8 +7,7 @@ import { ListadoPequeñas, ListadoPizzas, ListadoSandwiches,
 export const Productos = (props) => {
         
 return(
-        <section>
-                <div className="productos">
+        <section><div className="productos">
                 <h1>PIZZAS GRANDES</h1>
 
                         <div id="pizzas">

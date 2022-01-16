@@ -2,8 +2,6 @@ import React from "react"
 import { useEffect, useState } from "react"
 import { ListadoProductos } from "./Render";
 
-
-
 export const ListadoPizzas = (props) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true);
@@ -15,8 +13,7 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[])            
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
 
 export const ListadoMedianas = (props) => {
     const [products, setProducts] = useState([])
@@ -29,8 +26,7 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[])   
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
 
 export const ListadoPequeñas = (props) => {
     const [products, setProducts] = useState([])
@@ -43,8 +39,7 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[])   
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
 
 export const ListadoEmpanadas = (props) => {
     const [products, setProducts] = useState([])
@@ -57,8 +52,7 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[])  
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
 
 export const ListadoFritas = (props) => {
     const [products, setProducts] = useState([])
@@ -71,8 +65,7 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[])  
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
 
 export const ListadoSandwiches = (props) => {
     const [products, setProducts] = useState([])
@@ -85,8 +78,7 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[]) 
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
 
 export const ListadoBebidas = (props) => {
     const [products, setProducts] = useState([])
@@ -99,8 +91,7 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[]) 
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
 
 export const ListadoExtras = (props) => {
     const [products, setProducts] = useState([])
@@ -113,5 +104,4 @@ useEffect(()=>{
         setLoading(false);
         setProducts(res)})},[]) 
 return (
-    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>
-)}
+    <ListadoProductos products={products} AgregarACarrito={props.AgregarACarrito}></ListadoProductos>)}
